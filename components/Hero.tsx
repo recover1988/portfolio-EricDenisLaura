@@ -17,7 +17,7 @@ const Hero = (props: Props) => {
             '<PeroMeGustaMasCodear />',
         ],
         loop: true,
-        delaySpeed: 2000,
+        delaySpeed: 2800,
     })
 
     return (
@@ -36,7 +36,7 @@ const Hero = (props: Props) => {
                 </h2>
                 <h1 className='text-5xl text-color3 lg:text-6xl font-semibold px-10'>
                     <span>{text}</span>
-                    <Cursor cursorColor='#ff0062' />
+                    <Cursor cursorColor='#db2ec0' />
                 </h1>
                 <div className='mt-4 pt-4'>
                     <Link href='#about' passHref >

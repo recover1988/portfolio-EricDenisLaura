@@ -26,17 +26,17 @@ const Header = (props: Props) => {
         {/* Social Icons */}
         <SocialIcon
           url="https://www.linkedin.com/in/eric-denis-laura-isnado/"
-          fgColor='steelblue'
+          fgColor='#b3b4bd'
           bgColor='transparent'
         />
         <SocialIcon
           url="https://github.com/recover1988"
-          fgColor='steelblue'
+          fgColor='#b3b4bd'
           bgColor='transparent'
         />
         <SocialIcon
           url="https://twitter.com/EricDenisLaura"
-          fgColor='steelblue'
+          fgColor='#b3b4bd'
           bgColor='transparent'
         />
       </motion.div>
@@ -59,10 +59,10 @@ const Header = (props: Props) => {
         <SocialIcon
           className='cursor-pointer'
           network='email'
-          fgColor='steelblue'
+          fgColor='#b3b4bd'
           bgColor='transparent'
         />
-        <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Contacta Me!</p>
+        <p className='uppercase hidden md:inline-flex text-sm text-color4'>Contacta Me!</p>
       </motion.div>
     </header>
   )

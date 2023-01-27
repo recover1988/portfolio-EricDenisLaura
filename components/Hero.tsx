@@ -11,8 +11,8 @@ const Hero = (props: Props) => {
 
     const [text, count] = useTypewriter({
         words: [
-            'Hola, Yo soy Eric Denis Laura Isnado.',
-            'Me-gusta-tomar-té.tsx" ;',
+            'Hola, Yo soy Eric Denis Laura Isnado',
+            'Me-gusta-tomar-té.tsx',
             '<PeroMeGustaMasCodear />',
         ],
         loop: true,
@@ -22,11 +22,16 @@ const Hero = (props: Props) => {
     return (
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
-            <Image
+            <div
+            className='relative h-50 w-50 mx-auto'
+            >
+                            <Image
                 src={miImagen}
                 alt='Mi imagen'
-                className='relative rounded-full h-40 w-40 object-cover mx-auto'
+                className='object-contain rounded-full'
             />
+            </div>
+
             <div>
                 <h2
                     className='text-sm uppercase text-color4 pb-2 tracking-[15px]'
@@ -42,10 +47,10 @@ const Hero = (props: Props) => {
                     <Cursor cursorColor='#ff0062' />
                 </h1>
                 <div>
-                    <button>About</button>
-                    <button>Experience</button>
-                    <button>Skills</button>
-                    <button>Projects</button>
+                    <button className='heroButton'>About</button>
+                    <button className='heroButton'>Experience</button>
+                    <button className='heroButton'>Skills</button>
+                    <button className='heroButton'>Projects</button>
                 </div>
             </div>
         </div>

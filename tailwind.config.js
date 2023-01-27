@@ -14,6 +14,9 @@ module.exports = {
       color5: "#ff0062",
     },
     extend: {},
+    fontFamily: {
+      display: ["Raskhal", "Hyperwave", "Oswald"],
+    },
   },
   plugins: [],
 };

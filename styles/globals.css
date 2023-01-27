@@ -7,3 +7,8 @@
         @apply px-6 py-2 border font-bold border-color2 rounded-full uppercase text-base tracking-widest text-color3 transition-all hover:border-color5 hover:text-color5 hover:font-display hover:text-3xl hover:border-4 hover:animate-pulse hover:ease-in-out duration-500
     }
 }
+@layer base {
+    html {
+      font-family: 'Fira Code','Victor Mono' , system-ui, sans-serif;
+    }
+  }

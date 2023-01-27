@@ -12,32 +12,28 @@ const About = (props: Props) => {
       className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
     >
       <h3 className='absolute top-24 uppercase tracking-[20px] text-color3 text-2xl'>About</h3>
-      <div         className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'>
-        <motion.img
-          initial={{
-            x: -300,
-            opacity: 0,
-          }}
-          transition={{
-            duration: 1.5,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-          }}
-          viewport={{
-            once: true,
-          }}
-          src='ruinas2.jpeg'
- 
-        />
-      </div>
 
-      <div className='p-6'>
-        <div className='space-y-10 px-0 md:px-10 p-4'>
-          <h4 className='text-4xl font-semibold text-color3'>Acerca de <span className='underline decoration-color5 decoration-4' >mi</span>:</h4>
-        </div>
-        <div className='text-base text-color3'>
+      <motion.img
+        initial={{
+          x: -300,
+          opacity: 0,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+        }}
+        viewport={{
+          once: true,
+        }}
+        src='ruinas2.jpeg'
+        className='-mb-32 md:mb-0 flex-shrink-0 w-52 h-52 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] sm:h-40 sm:w-40 sm:mb-0'
+      />
+      <div className='px-0 md:px-10 py-0 m-0'>
+        <h4 className='text-2xl font-semibold text-color3 py-1'>Acerca de <span className='underline decoration-color5 decoration-4' >mi</span>:</h4>
+        <div className='text-xs  text-color3'>
           <p>
             Me llamo Eric, soy <strong className='underline decoration-color5 decoration-2'>Full Stack Developer</strong>, y aprendi a codear en Henry en un curso intensivo de +800 horas donde aprendi los fundamentos de la programacion, a trabajar en equipo y usar las metodologias de CI/CD, SCRUM y reuniones, ademas realize varios proyectos con el stack <strong className='underline decoration-color5 decoration-2'>MERN</strong> y <strong className='underline decoration-color5 decoration-2'>PERN</strong>.
           </p>
@@ -49,13 +45,6 @@ const About = (props: Props) => {
           </p>
         </div>
       </div>
-
-
-
-
-
-
-
     </motion.div>
   )
 }

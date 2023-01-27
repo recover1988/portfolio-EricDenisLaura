@@ -4,6 +4,7 @@ import { BackgroundCircles } from './'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import miImagen from '../public/fotoperfil.jpg'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -20,32 +21,36 @@ const Hero = (props: Props) => {
     })
 
     return (
-        <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden z-20'>
+        <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
             <Image
                 src={miImagen}
                 alt='Mi imagen'
-                className='object-fill relative h-40 w-40  mx-auto rounded-full'
+                className='relative h-40 w-40  mx-auto rounded-full object-cover'
             />
-            <div>
+            <div className='z-20'>
                 <h2
                     className='text-sm uppercase text-color4 pb-2 tracking-[15px]'
                 >
                     Full Stack Developer
                 </h2>
-                <h1>
-                    <span
-                        className='text-5xl lg:text-6xl font-semibold px-10'
-                    >
-                        {text}
-                    </span>
+                <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
+                    <span>{text}</span>
                     <Cursor cursorColor='#ff0062' />
                 </h1>
-                <div>
-                    <button className='heroButton'>About</button>
-                    <button className='heroButton'>Experience</button>
-                    <button className='heroButton'>Skills</button>
-                    <button className='heroButton'>Projects</button>
+                <div className='pt-5'>
+                    <Link href='#about' passHref >
+                        <button className='heroButton'>About</button>
+                    </Link>
+                    <Link href='#experience' passHref>
+                        <button className='heroButton'>Experience</button>
+                    </Link>
+                    <Link href='#skils' passHref>
+                        <button className='heroButton'>Skills</button>
+                    </Link>
+                    <Link href='#projects' passHref>
+                        <button className='heroButton'>Projects</button>
+                    </Link>
                 </div>
             </div>
         </div>

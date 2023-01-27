@@ -54,7 +54,7 @@ const Header = (props: Props) => {
         transition={{
           duration: 1.5,
         }}
-        className='flex flex-row items-center text-gray-300 cursor-pointer'
+        className='flex flex-row items-center  cursor-pointer'
       >
         <SocialIcon
           className='cursor-pointer'
@@ -62,7 +62,7 @@ const Header = (props: Props) => {
           fgColor='#b3b4bd'
           bgColor='transparent'
         />
-        <p className='uppercase hidden md:inline-flex text-sm text-color4'>Contacta Me!</p>
+        <p className='uppercase hidden md:inline-flex text-sm text-color3'>Contacta Me!</p>
       </motion.div>
     </header>
   )

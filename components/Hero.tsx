@@ -30,11 +30,11 @@ const Hero = (props: Props) => {
             />
             <div className='z-20'>
                 <h2
-                    className='text-sm uppercase text-color4 pb-2 tracking-[15px]'
+                    className='text-sm uppercase text-color3 pb-2 tracking-[15px]'
                 >
                     Full Stack Developer
                 </h2>
-                <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
+                <h1 className='text-5xl text-color3 lg:text-6xl font-semibold px-10'>
                     <span>{text}</span>
                     <Cursor cursorColor='#ff0062' />
                 </h1>

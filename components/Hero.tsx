@@ -20,18 +20,13 @@ const Hero = (props: Props) => {
     })
 
     return (
-        <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+        <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden z-20'>
             <BackgroundCircles />
-            <div
-            className='relative h-50 w-50 mx-auto'
-            >
-                            <Image
+            <Image
                 src={miImagen}
                 alt='Mi imagen'
-                className='object-contain rounded-full'
+                className='object-fill relative h-40 w-40  mx-auto rounded-full'
             />
-            </div>
-
             <div>
                 <h2
                     className='text-sm uppercase text-color4 pb-2 tracking-[15px]'

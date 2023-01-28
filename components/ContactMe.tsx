@@ -14,26 +14,31 @@ interface FormValues {
 
 
 const ContactMe = (props: Props) => {
-  const { register,reset, handleSubmit, formState: { errors } } = useForm<FormValues>();
+  const { register, reset, handleSubmit, formState: { errors } } = useForm<FormValues>();
 
-const [buttonLock, setButtonLock] = useState(false)
+  const [buttonLock, setButtonLock] = useState(false)
 
   const onSubmit: SubmitHandler<FormValues> = (formData) => {
-    setButtonLock(true)
-    emailjs.send(
-      process.env.EMAILJS_SERVICE_ID!,
-      process.env.EMAILJS_TEMPLATE_ID!,
-      formData as any,
-      process.env.EMAILJS_PUBLIC_KEY,
-    )
-      .then(function (response) {
-        console.log('SUCCESS!', response.status, response.text);
-        setButtonLock(true)
+    if (Object.values(formData).length > 2) {
+      setButtonLock(true)
+      emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        formData as any,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      )
+        .then(function (response) {
+          setButtonLock(true)
+          console.log('SUCCESS!', response.status, response.text);
+          
 
-      }, function (error) {
-        setButtonLock(false)
-        console.log('FAILED...', error);
-      });
+        }, function (error) {
+          setButtonLock(false)
+          console.log('FAILED...', error);
+        });
+    }
+    return
+
   }
 
   return (

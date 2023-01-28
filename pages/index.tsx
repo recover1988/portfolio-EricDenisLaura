@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import { About, Header, Hero, Projects, Skills } from '@/components'
+import { About, ContactMe, Header, Hero, Projects, Skills } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,7 +32,9 @@ export default function Home() {
         <Projects />
       </section>
       {/* Contact Me */}
-
+      <section>
+        <ContactMe />
+      </section>
     </div>
   )
 }

@@ -9,6 +9,9 @@
     .titleSection{
       @apply absolute top-20 uppercase tracking-[20px] text-color5 text-2xl font-display
     }
+    .strongWord{
+      @apply underline decoration-color5 decoration-2 underline-offset-2
+    }
 }
 @layer base {
     html {

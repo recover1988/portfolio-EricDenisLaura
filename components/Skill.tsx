@@ -17,6 +17,7 @@ const Skill = ({ directionLeft, name, percentage }: Props) => {
         }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
+        viewport={{once:true}}
         src={name}
         className='rounded-lg bg-color4 border border-color3 object-cover w-8 h-8 xl:w-32 xl:h-32 filter transition duration-500 ease-in-out hover:border-color5 hover:animate-pulse hover:border-4 sm:w-12 sm:h-12'
       />

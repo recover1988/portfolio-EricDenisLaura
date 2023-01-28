@@ -15,7 +15,7 @@ const Skills = (props: Props) => {
 
       <h3 className='titleSection'>Skills</h3>
 
-      <h3 className='absolute top-36 uppercase tracking-[3px] text-color3 text-sm'>Esta son mis habilidades por ahora...</h3>
+      <h3 className='absolute top-36 uppercase tracking-[3px] text-color3 text-sm'>Esta son mis <strong className='strongWord'>habilidades</strong>  por ahora...</h3>
 
 
 

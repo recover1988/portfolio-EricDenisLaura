@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className='bg-[#161616] text-color3 h-screen snap-y snap-mandatory overflow-scroll z-0 overflow-x-hidden'>
+    <div className='bg-[#161616] text-color3 h-screen snap-y snap-mandatory overflow-y-scroll z-0 overflow-x-hidden scrollbar scrollbar-track-color5/20 scrollbar-thumb-color5/80'>
       <Head>
         <title>Eric Laura Portfolio</title>
         <meta name="description" content="FullStack, Developer, NodeJS, React, NextJS, Javascript,Typescript" />

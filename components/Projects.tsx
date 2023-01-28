@@ -17,7 +17,7 @@ const Projects = (props: Props) => {
         >
             <h3 className='titleSection'>Projects</h3>
 
-            <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
+            <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-color5/20 scrollbar-thumb-color5/80'>
                 {
                     projects.map((proj, index) => (
                         <div key={proj} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>

@@ -28,16 +28,19 @@ const Header = (props: Props) => {
           url="https://www.linkedin.com/in/eric-denis-laura-isnado/"
           fgColor='#b3b4bd'
           bgColor='transparent'
+          target='_blank'
         />
         <SocialIcon
           url="https://github.com/recover1988"
           fgColor='#b3b4bd'
           bgColor='transparent'
+          target='_blank'
         />
         <SocialIcon
           url="https://twitter.com/EricDenisLaura"
           fgColor='#b3b4bd'
           bgColor='transparent'
+          target='_blank'
         />
       </motion.div>
       <motion.div

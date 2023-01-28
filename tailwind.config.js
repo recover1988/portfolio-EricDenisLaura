@@ -15,7 +15,7 @@ module.exports = {
     },
     extend: {},
     fontFamily: {
-      display: ["Raskhal", "Hyperwave", "Oswald"],
+      display: ["Technos", "Hyperwave", "Raskhal", "Oswald"],
     },
   },
   plugins: [],

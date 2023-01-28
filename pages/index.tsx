@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import { About, Header, Hero, Skills } from '@/components'
+import { About, Header, Hero, Projects, Skills } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,7 +28,9 @@ export default function Home() {
         <Skills />
       </section>
       {/* Projects */}
-
+      <section id='projects' className='snap-center'>
+        <Projects />
+      </section>
       {/* Contact Me */}
 
     </div>

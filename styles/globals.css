@@ -18,6 +18,9 @@
     .buttonForm{
       @apply  bg-color5/40 py-5 px-10 rounded-lg text-color3/40 font-bold text-lg hover:bg-color5 hover:text-color4 transition-all duration-500 ease-in-out
     }
+    .inputInvalid{
+      @apply text-red-500 text-xs p-0 m-0 h-1 align-top
+    }
   
 }
 @layer base {

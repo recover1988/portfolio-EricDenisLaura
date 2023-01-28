@@ -29,9 +29,9 @@ const About = (props: Props) => {
           once: true,
         }}
         src='ruinas2.jpeg'
-        className='-mb-32 md:mb-0 flex-shrink-0 w-52 h-52 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] sm:h-40 sm:w-40 sm:mb-0'
+        className='-mb-20 md:mb-0 rounded-full object-cover flex-shrink-0 w-14 h-14 sm:h-40 sm:w-40 sm:mb-0  md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] '
       />
-      <div className='px-0 md:px-10 py-0 m-0'>
+      <div className='px-0 md:px-1 md:m-20'>
         <h4 className='text-2xl font-semibold text-color3 py-1'>Acerca de <span className='underline decoration-color5 decoration-4' >mi</span>:</h4>
         <div className='text-xs  text-color3'>
           <p>

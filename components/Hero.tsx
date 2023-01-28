@@ -21,7 +21,7 @@ const Hero = (props: Props) => {
     })
 
     return (
-        <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden '>
+        <div className='h-screen pt-[200px] flex flex-col space-y-8 items-center justify-center text-center overflow-hidden '>
             <BackgroundCircles />
             <Image
                 src={miImagen}
@@ -34,7 +34,7 @@ const Hero = (props: Props) => {
                 >
                     Full Stack Developer
                 </h2>
-                <h1 className='text-5xl text-color3 lg:text-6xl font-semibold px-10'>
+                <h1 className='text-4xl text-color3 sm:text-lg lg:text-6xl font-semibold px-10'>
                     <span>{text}</span>
                     <Cursor cursorColor='#db2ec0' />
                 </h1>

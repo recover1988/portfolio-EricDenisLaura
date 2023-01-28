@@ -5,10 +5,13 @@ type Props = {}
 const Projects = (props: Props) => {
     return (
         <div
-            className='flex flex-col relative text-center md:text-left xl:flex-row max-w-[2000-x] xl:px-10 min-h-screen justify-center mx-auto items-center xl:space-y-0'
+            className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
         >
-          <h3 className='titleSection'>Projects</h3>
-
+            <h3 className='titleSection'>Projects</h3>
+<div className=''>
+    {/* proyects */}
+</div>
+            <div className='w-full absolute top-[30%] bg-color5/10 left-0 h-[500px] -skew-y-12' />
         </div>
     )
 }

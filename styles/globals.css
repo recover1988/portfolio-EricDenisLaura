@@ -12,6 +12,13 @@
     .strongWord{
       @apply underline decoration-color5 decoration-2 underline-offset-2
     }
+    .inputContact{
+      @apply outline-none bg-color5/10 rounded-lg border-b-2 border-color5/10 px-6 py-4  text-color3 placeholder-color3 transition-all focus:border-color5 focus:text-color4  hover:border-color5/40
+    }
+    .buttonForm{
+      @apply  bg-color5/40 py-5 px-10 rounded-lg text-color3/40 font-bold text-lg hover:bg-color5 hover:text-color4 transition-all duration-500 ease-in-out
+    }
+  
 }
 @layer base {
     html {

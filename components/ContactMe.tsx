@@ -152,7 +152,7 @@ const ContactMe = (props: Props) => {
         </div>
 
         <button
-          className='buttonForm'
+          className={isValid ? 'buttonEnable' : 'buttonDisabled'}
           type='submit'
           disabled={!isValid}
         >

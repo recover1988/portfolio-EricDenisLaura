@@ -22,7 +22,6 @@ export default function Home() {
       <section id='about' className='snap-center'>
         <About />
       </section>
-
       {/* Skills */}
       <section id='skills' className='snap-center'>
         <Skills />
@@ -38,3 +37,4 @@ export default function Home() {
     </div>
   )
 }
+

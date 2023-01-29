@@ -21,6 +21,7 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Este portfolio es para ir mostrando mis trabajos, proyectos y habilidades.
 
 
 ## Paquetes que utilize para este portfolio son:
@@ -30,7 +31,8 @@ TailwindCSS
 react-social-icons (iconos)
 framer-motion (animaciones)
 react-simple-typewriter (letras que se escriben)
-
+react-hook-form (validar envio de mensaje)
+EmailJS (para los emails)
 ```
 ## Deploy on Vercel
 

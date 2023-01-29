@@ -32,7 +32,7 @@ const About = (props: Props) => {
           once: true,
         }}
         src='ruinas2.jpeg'
-        className=' mb-32  rounded-full object-cover flex-shrink w-32 h-32 sm:h-40 sm:w-40 sm:mb-0 sm:mx-7 md:mb-0 md:rounded-lg md:w-64 md:h-64 xl:w-[500px] xl:h-[600px] '
+        className=' mb-32  rounded-full object-cover flex-shrink w-32 h-32 sm:h-40 sm:w-40 sm:mb-0 sm:mx-7 md:mb-0 md:rounded-lg md:w-64 md:h-64 xl:w-[400px] xl:h-[500px] '
         // className='-m-5 rounded-full object-cover flex-shrink-0 w-30 h-30 sm:h-50 sm:w-50 sm:mb-0  md:mb-0 md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] '
       />
       <div>

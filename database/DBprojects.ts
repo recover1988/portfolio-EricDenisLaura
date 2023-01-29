@@ -28,6 +28,6 @@ export const projects: IProjects[] = [
         name: 'Teslo Shop',
         video: 'https://youtu.be/ZgaNCsbAu7A',
         description: 'Es una Tienda clon de Tesla Shop, fue desarrollada en NextJS con TypeScript. En esta aplicacion se usa Cookies para hacer la autentificacion por NextAuth, los pagos se realizan con Paypal, se uso MongoDb como base de datos para guardar los productos, usuarios y regitro de compras. Formularios para crear productos con Cloudinary para las imagenes. Cuenta con dashboard para ver los productos, usaurios y registros de venta. ',
-        repository: 'https://pawsitive-app.vercel.app/',
+        repository: 'https://github.com/recover1988/Teslo-Shop-NEXTJS-TS',
     },
 ]

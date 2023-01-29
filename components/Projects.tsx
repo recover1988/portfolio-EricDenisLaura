@@ -19,9 +19,9 @@ const Projects = (props: Props) => {
 
             <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-color5/20 scrollbar-thumb-color5/80'>
                 {
-                    DB.projects.map(({id,description,name,repository,video}) => (
+                    DB.projects.map(({ id, description, name, repository, video }) => (
                         <CardProject
-                        key={id}
+                            key={id}
                             id={id}
                             name={name}
                             video={video}

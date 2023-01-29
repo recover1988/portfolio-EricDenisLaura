@@ -6,13 +6,13 @@ import { SocialIcon } from 'react-social-icons'
 type Props = {
   id: number,
   name: string,
-  img: string,
+  img?: string,
   video: string,
   description: string,
   repository: string,
 }
 
-const CardProject = ({id,name,img,video,description,repository }: Props) => {
+const CardProject = ({ id, name, img, video, description, repository }: Props) => {
   return (
     <div key={id} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
       <motion.div
@@ -24,7 +24,13 @@ const CardProject = ({id,name,img,video,description,repository }: Props) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <ReactPlayer url='https://youtu.be/ZgaNCsbAu7A' />
+        <ReactPlayer
+          url='https://youtu.be/ZgaNCsbAu7A'
+          playing={true}
+          muted
+          width='100%'
+          height='100%'
+        />
       </motion.div>
       <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
         <h4 className='text-2xl font-semibold text-center'>
@@ -32,13 +38,14 @@ const CardProject = ({id,name,img,video,description,repository }: Props) => {
           {name}
         </h4>
         <p className='text-lg text-center md:text-left'>
-      {description}
-          </p>
-          <SocialIcon
+          {description}
+        </p>
+        <SocialIcon
           url={repository}
           fgColor='#004CFF'
           bgColor='transparent'
           target='_blank'
+          
         />
       </div>
     </div>

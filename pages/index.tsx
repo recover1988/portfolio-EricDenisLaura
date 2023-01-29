@@ -31,7 +31,7 @@ export default function Home() {
         <Projects />
       </section>
       {/* Contact Me */}
-      <section id='contactme' className='snap-end'>
+      <section id='contact' className='snap-end'>
         <ContactMe />
       </section>
     </div>

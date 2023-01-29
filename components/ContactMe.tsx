@@ -16,9 +16,10 @@ interface FormValues {
 const ContactMe = (props: Props) => {
   const { register, reset, handleSubmit, formState: { errors, isSubmitSuccessful, isValid }, getValues } = useForm<FormValues>();
 
+  const [isEnable, setIsEnable] = useState(false)
 
   const onSubmit: SubmitHandler<FormValues> = (formData) => {
-    if (Object.values(formData).length === 4) {
+    if (isValid) {
       emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
@@ -26,7 +27,6 @@ const ContactMe = (props: Props) => {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
       )
         .then(function (response) {
-          reset();
           console.log('SUCCESS!', response.status, response.text);
         }, function (error) {
           console.log('FAILED...', error);
@@ -82,12 +82,17 @@ const ContactMe = (props: Props) => {
             <div className="inputInvalid">
               {
                 errors.name?.type === 'pattern'
-                  ? '--no uses caracteres especiales--'
+                  ? '-- no uses caracteres especiales --'
                   : null
               }
               {
                 errors.name?.type === 'maxLength'
                   ? '-- dudo que tenga más 20 caracteres -- '
+                  : null
+              }
+              {
+                errors.name?.type === 'required'
+                  ? '-- como se llama? -- '
                   : null
               }
             </div>
@@ -110,6 +115,11 @@ const ContactMe = (props: Props) => {
                   ? '-- email no valido --'
                   : null
               }
+              {
+                errors.name?.type === 'required'
+                  ? '-- cual es su email? -- '
+                  : null
+              }
             </div>
 
           </div>
@@ -130,6 +140,11 @@ const ContactMe = (props: Props) => {
                 ? '-- un poco mas corto --'
                 : null
             }
+            {
+              errors.name?.type === 'required'
+                ? '-- y el asunto del mensaje? -- '
+                : null
+            }
           </span>
         </div>
         {/* Mensaje */}
@@ -148,13 +163,18 @@ const ContactMe = (props: Props) => {
                 ? '-- esta muy largo mejor programemos una reunion --'
                 : null
             }
+            {
+              errors.name?.type === 'required'
+                ? '-- tiene un mensaje para mi? -- '
+                : null
+            }
           </span>
         </div>
 
         <button
-          className={isValid ? 'buttonEnable' : 'buttonDisabled'}
+          className='buttonForm'
           type='submit'
-          disabled={!isValid}
+
         >
           {isSubmitSuccessful ? 'Mensaje enviado' : "Enviar"}
         </button>

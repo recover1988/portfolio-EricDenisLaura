@@ -2,32 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .heroButton{
-        @apply px-6 py-2 border font-bold border-color2 rounded-full uppercase text-base tracking-widest text-color3 transition-all hover:border-color5 hover:text-color5 hover:font-display hover:text-3xl hover:border-4 hover:animate-pulse hover:ease-in-out duration-500
-    }
-    .titleSection{
-      @apply absolute top-20 uppercase tracking-[20px] text-color5 text-2xl font-display
-    }
-    .strongWord{
-      @apply underline decoration-color5 decoration-2 underline-offset-2
-    }
-    .inputContact{
-      @apply outline-none bg-color5/10 rounded-lg border-b-2 border-color5/10 px-2 py-1  md:px-6 md:py-4 text-color3 placeholder-color3 transition-all focus:border-color5 focus:text-color4  hover:border-color5/40
-    }
-    .buttonDisabled{
-      @apply bg-color5/50 py-5 px-10 rounded-lg text-color4/50 font-bold text-lg
-    }
-    .buttonEnable{
-      @apply bg-color5 py-5 px-10 rounded-lg text-color4 font-bold text-lg hover:shadow-xl hover:shadow-color5/50
-    }
-    .inputInvalid{
-      @apply text-red-500 text-xs p-0 m-0 h-1 align-top
-    }
-  
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 border font-bold border-color2 rounded-full uppercase text-base tracking-widest text-color3 transition-all hover:border-color5 hover:text-color5 hover:font-display hover:text-3xl hover:border-4 hover:animate-pulse hover:ease-in-out duration-500;
+  }
+  .titleSection {
+    @apply absolute top-20 uppercase tracking-[20px] text-color5 text-2xl font-display;
+  }
+  .strongWord {
+    @apply underline decoration-color5 decoration-2 underline-offset-2;
+  }
+  .inputContact {
+    @apply outline-none bg-color5/10 rounded-lg border-b-2 border-color5/10 px-2 py-1  md:px-6 md:py-4 text-color3 placeholder-color3 transition-all focus:border-color5 focus:text-color4  hover:border-color5/40;
+  }
+  .buttonForm {
+    @apply bg-color5/50 py-5 px-10 rounded-lg text-color4/50 font-bold text-lg hover:bg-color5 hover:text-color4;
+  }
+  .inputInvalid {
+    @apply text-red-500 text-xs p-0 m-0 h-1 align-top text-center w-full
+  }
 }
 @layer base {
-    html {
-      font-family: 'Fira Code','Victor Mono' , system-ui, sans-serif;
-    }
+  html {
+    font-family: "Fira Code", "Victor Mono", system-ui, sans-serif;
   }
+}

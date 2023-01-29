@@ -14,12 +14,7 @@ interface FormValues {
 
 
 const ContactMe = (props: Props) => {
-  const { register, reset, handleSubmit, formState: { errors }, getValues } = useForm<FormValues>();
-
-  const [buttonLock, setButtonLock] = useState(false)
-  const [mensaje, setMensaje] = useState<boolean>(false)
-
-
+  const { register, reset, handleSubmit, formState: { errors, isSubmitSuccessful, isValid }, getValues } = useForm<FormValues>();
 
 
   const onSubmit: SubmitHandler<FormValues> = (formData) => {
@@ -31,14 +26,9 @@ const ContactMe = (props: Props) => {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
       )
         .then(function (response) {
-          setButtonLock(true)
-          setMensaje(true)
+          reset();
           console.log('SUCCESS!', response.status, response.text);
-
-
         }, function (error) {
-          setButtonLock(false)
-          setMensaje(false)
           console.log('FAILED...', error);
         });
     }
@@ -81,10 +71,13 @@ const ContactMe = (props: Props) => {
             <input
               placeholder="Nombre"
               className="inputContact"
-              {...register('name', {
+              {
+              ...register('name', {
                 maxLength: 20,
-                pattern: /[a-zA-Z\s:]/
-              })}
+                pattern: /[a-zA-Z\s:]/,
+                required: true
+              })
+              }
             />
             <div className="inputInvalid">
               {
@@ -104,9 +97,12 @@ const ContactMe = (props: Props) => {
             <input
               placeholder="Email"
               className="inputContact"
-              {...register('email', {
+              {
+              ...register('email', {
+                required: true,
                 pattern: /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/
-              })}
+              })
+              }
             />
             <div className="inputInvalid">
               {
@@ -125,6 +121,7 @@ const ContactMe = (props: Props) => {
             className="inputContact"
             {...register('subject', {
               maxLength: 60,
+              required: true,
             })}
           />
           <span className="inputInvalid">
@@ -142,6 +139,7 @@ const ContactMe = (props: Props) => {
             className="inputContact"
             {...register('message', {
               maxLength: 300,
+              required: true,
             })}
           />
           <span className="inputInvalid">
@@ -156,9 +154,9 @@ const ContactMe = (props: Props) => {
         <button
           className='buttonForm'
           type='submit'
-          disabled={buttonLock}
+          disabled={!isValid}
         >
-          {mensaje ? 'Mensaje enviado' : "Enviar"}
+          {isSubmitSuccessful ? 'Mensaje enviado' : "Enviar"}
         </button>
       </form>
 

@@ -36,7 +36,7 @@ const Hero = (props: Props) => {
                 </h2>
                 <h1 className='text-4xl text-color3 sm:text-lg lg:text-6xl font-semibold px-10'>
                     <span>{text}</span>
-                    <Cursor cursorColor='#db2ec0' />
+                    <Cursor cursorColor='#ff0062' />
                 </h1>
                 <div className='mt-4 pt-4'>
                     <Link href='#about' passHref >

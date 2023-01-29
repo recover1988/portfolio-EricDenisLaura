@@ -19,7 +19,7 @@ const Skills = (props: Props) => {
 
 
 
-      <div className='grid grid-cols-4 gap-5'>
+      <div className='grid grid-cols-3 gap-5 md:grid-cols-4'>
         <Skill directionLeft={false} name={icono.javascript} />
         <Skill directionLeft={true} name={icono.typescript} />
         <Skill directionLeft={false} name={icono.react} />

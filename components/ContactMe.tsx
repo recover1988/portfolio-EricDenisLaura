@@ -40,7 +40,7 @@ const ContactMe = (props: Props) => {
     <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl  justify-center mx-auto items-center'>
       <h3 className='titleSection'>Contact</h3>
 
-      <div className='flex flex-col space-y-4 md:space-y-10'>
+      <div className='flex flex-col space-y-4 md:space-y-10 md:ml-40'>
         <h4 className='text-lg md:text:3xl font-semibold text-center'>
           Si puedo ayudarte,{' '}
           <strong className='strongWord'>hablemos.</strong>

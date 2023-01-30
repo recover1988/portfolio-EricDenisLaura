@@ -68,7 +68,7 @@ const Header = (props: Props) => {
             fgColor='#b3b4bd'
             bgColor='transparent'
           />
-          <p className='uppercase hidden md:inline-flex text-sm text-color3'>Contacta Me!</p>
+          <p className='uppercase hidden md:inline-flex text-sm text-color3'>Hablemos!!!</p>
     
       </motion.div>
     </Link>

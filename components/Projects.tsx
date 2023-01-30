@@ -32,7 +32,7 @@ const Projects = (props: Props) => {
 
             </div>
 
-            <div className='w-full absolute top-[30%] bg-color5/10 left-0 h-[500px] -skew-y-12' />
+            {/* <div className='w-full absolute top-[30%] bg-color5/10 left-0 h-[500px] -skew-y-12' /> */}
         </motion.div>
     )
 }

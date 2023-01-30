@@ -19,7 +19,5 @@ module.exports = {
       display: ["Technos", "Hyperwave", "Raskhal", "Oswald"],
     },
   },
-  plugins: [
-    require('tailwind-scrollbar'),
-  ],
+  plugins: [require("tailwind-scrollbar")],
 };

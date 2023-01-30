@@ -26,6 +26,7 @@ const Hero = (props: Props) => {
             <Image
                 src={miImagen}
                 alt='Mi imagen'
+                priority
                 className='relative h-40 w-40  mx-auto rounded-full object-cover'
             />
             <div className='z-20'>
@@ -36,7 +37,7 @@ const Hero = (props: Props) => {
                 </h2>
                 <h1 className='text-4xl text-color3 sm:text-lg lg:text-6xl font-semibold px-10'>
                     <span>{text}</span>
-                    <Cursor cursorColor='#ff0062' />
+                    <Cursor cursorColor='#004CFF' />
                 </h1>
                 <div className='mt-4 pt-4'>
                     <Link href='#about' passHref >

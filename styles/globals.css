@@ -7,7 +7,7 @@
     @apply px-6 py-2 border font-bold border-color2 rounded-full uppercase text-base tracking-widest text-color3 transition-all hover:border-color5 hover:text-color5 hover:font-display hover:text-3xl hover:border-4 hover:animate-pulse hover:ease-in-out duration-500;
   }
   .titleSection {
-    @apply absolute top-20 uppercase tracking-[20px] text-color5 text-2xl font-display ;
+    @apply absolute top-20 uppercase tracking-[20px] text-color5 text-3xl font-display  ;
   }
   .strongWord {
     @apply underline decoration-color5 decoration-2 underline-offset-2;
@@ -19,11 +19,15 @@
     @apply bg-color5/50 py-5 px-10 rounded-lg text-color4/50 font-bold text-lg hover:bg-color5 hover:text-color4;
   }
   .inputInvalid {
-    @apply text-red-500 text-xs p-0 m-0 h-1 align-top text-center w-full
+    @apply text-[#ff0062] text-xs p-0 m-0 h-1 align-top text-center w-full font-semibold
+  }
+  .gradientColor{
+    @apply from-[#ff0062] to-[#004CFF] 
   }
 }
 @layer base {
   html {
     font-family: "Fira Code", "Victor Mono", system-ui, sans-serif;
   }
+  
 }

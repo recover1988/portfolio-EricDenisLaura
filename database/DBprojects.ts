@@ -30,4 +30,11 @@ export const projects: IProjects[] = [
         description: 'Es una Tienda clon de Tesla Shop, fue desarrollada en NextJS con TypeScript. En esta aplicacion se usa Cookies para hacer la autentificacion por NextAuth, los pagos se realizan con Paypal, se uso MongoDb como base de datos para guardar los productos, usuarios y regitro de compras. Formularios para crear productos con Cloudinary para las imagenes. Cuenta con dashboard para ver los productos, usaurios y registros de venta. ',
         repository: 'https://github.com/recover1988/Teslo-Shop-NEXTJS-TS',
     },
+    {
+        id: 4,
+        name: 'Zarha Shop',
+        video: 'https://youtu.be/z31QMXUDiIw',
+        description: 'Es una tienda de ropa, esta desarrollada en ReactJS, MaterialUI, y para el backend use Strapi, sirvio para aplicar el uso de la pasarela de pagos Stripe.',
+        repository: 'https://github.com/recover1988/Ecommerce-ReactJS-Strapi-Stripe',
+    },
 ]

@@ -26,6 +26,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Paquetes que utilize para este portfolio son:
 ```
+NodeJS v18
 NextJS
 TailwindCSS
 react-social-icons (iconos)
